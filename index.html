@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sree Anirudh J Bhandaram</title>
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+       // $("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)
+
+        $("ul.topnav li a").click(function() { //When trigger is clicked...
+
+                //Following events are applied to the subnav itself (moving subnav up and down)
+                $(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+                $(this).parent().hover(function() {
+                }, function(){
+                        $(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+                });
+
+                //Following events are applied to the trigger (Hover events for the trigger)
+                }).hover(function() {
+                        $(this).addClass("subhover"); //On hover over, add class "subhover"
+                }, function(){	//On Hover Out
+                        $(this).removeClass("subhover"); //On hover out, remove class "subhover"
+        });
+
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12574839-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+        <div class="homePageContainer">
+            <div class="homePageContent">
+               <p class="bigText">
+                    Hi I am <br />
+                    <span class="importantText">Sree Anirudh J Bhandaram</span> 
+                    <br />
+                    and I am a <span class="importantText">usability, ux &amp; web development</span> professional
+                </p>
+                <p>
+                    I am passionate about usability and web development. I am currently a graduate student in Human-Computer Interaction at Rochester Institute of Technology, working towards completing my masters thesis.
+                </p>
+                <p>
+                    I also work as a Teaching Assistant at RIT and in the past have worked as a Human Factors Intern at Eastman Kodak Co. and as a Software Engineer at Infosys Technologies Ltd.
+                </p>
+                
+                <div class="homeLinkBox">
+                    <a href="portfolio.php">
+                        <img alt="View my portfolio" src="images/portfolio.png" />
+                    </a>
+                </div>
+                <div class="homeLinkBox">
+                    <a href="resume.php">
+                        <img alt="Read my resume" src="images/resume.png" />
+                    </a>
+                </div>
+                <div class="homeLinkBox">
+                    <a href="skills.php">
+                        <img alt="Check out my skills" src="images/skills.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+html {
+background-color:#FFFFFF;
+font-family:"Myriad Pro",sans-serif;
+font-size:14px;
+color: #666666;
+}
+.container {
+margin-left:auto;
+margin-right:auto;
+padding:10px;
+width:950px;
+}
+
+.homePageContainer {
+margin-left:auto;
+margin-right:auto;
+padding:10px;
+width:750px;
+}
+
+.header {
+border-bottom:1px solid #000000;
+float:left;
+margin-bottom:10px;
+width:inherit;
+}
+.headerTitle {
+/*float:left;*/
+/*width:500px;*/
+text-align: center;
+}
+.headerTitle h1 {
+font-family:"Engel Light Ltd",Myriad Pro,sans-serif;
+font-size:35px;
+font-weight:bold;
+margin:0;
+color: #990000;
+}
+.headerTitle span {
+    font-size:16px;    
+}
+.headerLinks {
+margin-top:15px;
+}
+.content {
+float:left;
+/*margin-bottom:10px;*/
+width:inherit;
+}
+
+.homePageContent {
+    margin-top: 150px;
+    font-family: "Engel Light Ltd",Myriad Pro,sans-serif;
+    font-size: 17px;
+    color: #999999;
+}
+
+.homePageContent .importantText {
+    color: #990000;   
+}
+.homePageContent p.bigText{
+    text-transform:uppercase;
+    font-size: 32px;
+}
+
+.homePageContent .homeLinkBox{
+    float: left;
+    text-align: center;
+    width: 245px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+.homePageContent .homeLinkBox:hover{
+    background-color:#F8F8F8;
+}
+.content img {
+float:left;
+margin:0 10px 10px;
+}
+.content p {
+float:left;
+}
+.myInfo {
+border-bottom:1px dotted #000000;
+font-size:16px;
+/*height:250px;*/
+height:170px;
+}
+.itemRow {
+border-bottom:1px dotted #000000;
+clear:left;
+float:left;
+padding:10px;
+width:inherit;
+}
+.itemData {
+float:left;
+height:215px;
+margin:5px;
+width:250px;
+}
+.itemTitle {
+font-family:"Engel Light Ltd",Myriad Pro,sans-serif;
+font-size:25px;
+font-weight:bold;
+color: #990000;
+}
+.itemDescription {
+font-size:14px;
+}
+.itemBox {
+border-radius: 5px;
+background-color:#EEEEEE;
+border:1px solid #999999;
+color:#333333;
+float:left;
+height:200px;
+margin:10px;
+text-align:center;
+width:200px;
+}
+.itemBox:hover {
+background-color:#DDDDDD;
+color:#000000;
+}
+.itemBox img {
+border:1px solid #999999;
+margin:4px;
+}
+.itemBoxText {
+font-size:12px;
+}
+.footer {
+font-family:"Engel Light Ltd",Myriad Pro,sans-serif;
+border-top:1px solid #000000;
+float:left;
+width:inherit;
+text-align: center;
+padding: 10px;
+margin:0;
+}
+.footerTitle {
+font-size: 20px;
+text-transform:uppercase;
+font-weight:bold;
+}
+.footerLinks {
+font-size:16px;
+}
+.footerLinks a {
+text-decoration: none;
+color: grey;
+}
+.footerLinks a:hover {
+    color: #000000;
+}
+
+/** --------------------------Dropdown navigation stuff------------------------------ **/
+/*html {*/
+/*	background-color: #000000;*/
+/*}*/
+ul.topnav {
+	list-style: none;
+	/*padding: 0 20px;*/
+	margin: 0;
+	float: left;
+	font-size: 20px;
+	/*background: url(../images/topnav_bg.gif) repeat-x;*/
+}
+ul.topnav li {
+	float: left;
+	margin: 0;
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+	padding: 10px 5px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover{
+	/*background: url(../images/topnav_hover.gif) no-repeat center top;*/
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(../images/subnav_btn.png) no-repeat center;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	/*background: #333;*/
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 170px;
+	border: 1px solid #cccccc;
+}
+ul.topnav li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	clear: both;
+	width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+	width: 145px;
+	background: #fefefe;
+	padding-left: 20px;
+        font-size: 15px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #eeeeee;
+}
