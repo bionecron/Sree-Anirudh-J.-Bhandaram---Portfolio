@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title> Portfolio - Sree Anirudh J Bhandaram </title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <?php
+            function __autoload($name)
+            {
+                include_once $name . ".php";
+            }
+        ?>
+        <?php include "includes/scripts.php"; ?>
+    </head>
+    
+    <body>
+        <div class="container">
+            <?php include "includes/header.php"; ?>
+            <div class="content">
+                <!-- <div class="myInfo">
+                                        
+                    I'm a graduate student in Human-Computer Interaction at R.I.T with Web development as my application domain. I'm currently working on my Masters thesis titled
+                    "Use of experts' gaze by novice usability practitioners to perform a better heuristic evaluation" under Dr. Evelyn Rozanski, Dr. Anne Haake &amp; Dr. Michael Yacci.
+                    I'm passionate about usability and web development.
+                    <br /> <br />
+                    I work part time as a Teaching Assistant, assisting undergraduate students in web development courses. I was a notetaker until last quarter, I took notes for the hearing impaired.
+                    <br /> <br />
+                    If you have a question, want to request my resume or just want to say hi, send me an email.    
+            </div> -->
+                <div class="itemRow">
+                    <div class="itemData">
+                        <div class="itemTitle"> Usability Portfolio </div>
+                        <div class="itemDescription"> A showcase of my usability and ucd projects </div>
+                    </div>
+                    <div class="itemBox">
+                        <a href="usability-testing.php">
+                            <img src="images/dm.png" alt="Usability Testing" />
+                            <strong>Usability Testing</strong> <br />DataMentor.org
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="usability-engineering.php">
+                            <img src="images/ue1.png" alt="Usability Engineering" />
+                            <strong>Usability Engineering</strong> <br />DumDumGym
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="user-centered-design-methods.php">
+                            <img src="images/ucd.png" alt="User-Centered Design Methods" />
+                            <strong>User-Centered Design Methods</strong> <br />Self checkout system
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="eye-tracking.php">
+                            <img src="images/eye.jpg" alt="Eye Tracking" />
+                            <strong>Eye-Tracking</strong> <br />Chipotle Online Ordering
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="usability-evaluations.php">
+                            <img src="images/uev.png" alt="Usability Evaluations" />
+                            <strong>Usability Evaluations</strong>
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="prototypes-wireframes-mockups.php">
+                            <img src="images/prot.png" alt="Prototypes, Wireframes, Mockups" />
+                            <strong>Prototypes, Wireframes &amp; Mockups</strong>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="itemRow">
+                    <div class="itemData">
+                        <div class="itemTitle">Web Development Portfolio</div>
+                        <div class="itemDescription"> A showcase of my web projects. Most of my websites are developed using xHTML, CSS, PHP and mySQL </div>
+                    </div>
+                    <div class="itemBox">
+                       	<a href="webdesign">
+                       		<img src="images/web_dev.png" alt="Placeholder Image" />
+                       		<strong>Introduction to Web Development</strong>
+                       	</a>
+                    </div>
+                    <div class="itemBox">
+                    	<a href="739">
+                       		<img src="images/pgm_www.png" alt="Placeholder Image" />
+                       		<strong>Programming for WWW</strong>
+                      	</a>
+                    </div>
+                    <div class="itemBox">
+                       	<a href="http://www.shuddhabhakti.com" >
+                       		<img src="images/shuddh.png" alt="Placeholder Image" />
+                       		<strong>Shuddhabhakti.com</strong>
+                       	</a>
+                    </div>
+                </div>
+                <div class="itemRow">
+                    <div class="itemData">
+                        <div class="itemTitle"> Research Papers </div>
+                        <div class="itemDescription"> A collection of various curricular research papers </div>
+                    </div>
+                    <div class="itemBox">
+                        <a href="activity-centered-design.php">
+                            <img src="images/paper.png" alt="Placeholder Image" />
+                            <strong> Activity Centered Design </strong>
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="inclusive-design.php">
+                            <img src="images/paper.png" alt="Placeholder Image" />
+                            <strong> Inclusive Design </strong>
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="multitouch-collaboration.php">
+                            <img src="images/paper.png" alt="Placeholder Image" />
+                            <strong> Multitouch Collaboration </strong>
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="prototyping.php">
+                            <img src="images/paper.png" alt="Placeholder Image" />
+                            <strong> Prototyping </strong>
+                        </a>
+                    </div>
+                </div>
+                    
+                <div class="itemRow">
+                    <div class="itemData">
+                        <div class="itemTitle"> Photography &amp; Sketches</div>
+                        <div class="itemDescription"> A showcase of my photographs and sketches</div>
+                    </div>
+                    <div class="itemBox">
+                        <a href="photography.php">
+                            <img src="images/photography.png" alt="Placeholder Image" />
+                            <strong> Photography </strong><!--Photos shot with a Canon EOS Rebel XSi Digital SLR.-->
+                        </a>
+                    </div>
+                    <div class="itemBox">
+                        <a href="sketches.php">
+                            <img src="images/sketches.png" alt="Placeholder Image" />
+                            <strong> Sketches </strong><!--A collection of sketches made using a Wacom Bamboo tablet.-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <?php include "includes/footer.php"; ?>
+        </div>
+    </body>
+</html>
